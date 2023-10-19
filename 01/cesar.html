@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado cesar</title>
+    <link rel="stylesheet" href="./stylecesar.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Texto que desea traducir</label>
+                    <br>
+                    <textarea type="text" name="text" id="texto" class="inputs" class="form-control"></textarea>
+                </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="desplazamiento">
+                    Desplazamiento
+                    <br>
+                </label>
+                <input type="range" min="1" max="25" step="1" id="desplazamiento" class="range"name="desplazamiento" class="form-control">
+            </div>
+        </div>
+       
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="desplazamiento">
+                    Resultado
+                </label>
+                <br>
+                <textarea  disabled id="cifrado" class="inputs" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="center">
+                <input type="checkbox" id="miSwitch" class="off" checked hidden>
+                <label for="miSwitch" class="switch"></label>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="./cesar.js"></script>
+</body>
+</html>
